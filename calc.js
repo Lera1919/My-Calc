@@ -128,28 +128,28 @@
     
 function display(val){
 
-    document.getElementById('result').value += val
+    document.getElementById('result').innerHTML += val
 
-    return val
-console.log()
+    
+// console.log()
 }
 
 
 function solve(){
 
-    let x = document.getElementById('result').value
+    let x = document.getElementById('result').innerHTML
 
     let y = eval(x);
 
-    document.getElementById('result').value = y
+    document.getElementById('result').innerHTML = y
 
-    return y
+    
 
 }
 
 function clearScreen(){
 
-    document.getElementById('result').value = ''
+    document.getElementById('result').innerHTML = ''
 
 }
 
